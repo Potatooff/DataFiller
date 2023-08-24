@@ -10,3 +10,4 @@ Result: I love chocolate!, i like chocolate, i am a chocolate fan
 
 - ' ML was found on hugging face '
 
+# Check example for an example of usage!
