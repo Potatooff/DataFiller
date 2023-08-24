@@ -5,17 +5,12 @@ from aa import get_response
 with open('data1.json', 'r') as file:
     data = json.load(file)
 
+# lower all string
 def lowering(asd):
     asd = f"{asd}"
     return asd.lower()
 
-def new_values(new_vales):
-    for intent in data["intents"]:
-        new_patterns = new_vales
-        intent["patterns"] = new_patterns
-    with open('data1.json', 'w') as file:
-        json.dump(data, file, indent=4)
-
+# produce multi sentence with the same meaning
 def bigger_data():  
     for intent in data["intents"]:
         upgraded = []
@@ -37,7 +32,4 @@ def bigger_data():
             json.dump(data, file, indent=4)
     
         print(upgraded_set)
-        #new_values(list(upgraded_set))
-        
-        
 bigger_data()
