@@ -1,0 +1,44 @@
+{
+  "intents": [
+      {
+          "tag": "greeting",
+          "patterns": [
+              "hello",
+              "hi",
+              "hey",
+              "yo",
+              "wassup",
+              "sup",
+              "hola",
+              "greeting",
+              "hiya",
+              "howdy"
+          ],
+          "responses": [
+              "Hello!",
+              "Good to see you again!",
+              "Hi there, how can I help?",
+              "Greetings user, how can I serve you today?",
+              "Sup user!",
+              "Hola user"
+          ]
+      },
+      {
+        "tag": "greeting",
+        "patterns": [
+            "bye",
+            "cya",
+            "goodbye"
+            
+        ],
+        "responses": [
+            "Hello!",
+            "Good to see you again!",
+            "Hi there, how can I help?",
+            "Greetings user, how can I serve you today?",
+            "Sup user!",
+            "Hola user"
+        ]
+    }
+  ]
+}
