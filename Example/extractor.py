@@ -1,28 +1,3 @@
-"""
-import json
-
-# Read data from the JSON file
-with open('data1.json', 'r') as file:
-    data = json.load(file)
-
-# Extracting patterns from the JSON
-patterns = data["intents"][0]["patterns"]
-for i in patterns:
-    print(i)
-
-print("")
-
-# Adding new patterns
-new_patterns = ["hey there", "what's up", "bye"]
-patterns.extend(new_patterns)
-
-# Write the modified data back to the JSON file
-with open('data1.json', 'w') as file:
-    json.dump(data, file, indent=4)
-
-print(patterns)  # This will show the updated patterns list
-"""
-
 import json
 from aa import get_response
 
